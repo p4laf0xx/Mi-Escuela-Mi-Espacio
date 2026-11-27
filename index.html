@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <script src="idioma.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto 2 - Mi Escuela, Mi Espacio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- SELECTOR DE IDIOMAS -->
+<div class="selector-idiomas">
+    <button class="btn-idioma" data-idioma="es">🇲🇽 ES</button>
+    <button class="btn-idioma" data-idioma="en">🇺🇸 EN</button>
+    <button class="btn-idioma" data-idioma="fr">🇫🇷 FR</button>
+    <button class="btn-idioma" data-idioma="it">🇮🇹 IT</button>
+</div>
+
+    <header class="encabezado">
+        <h1>PROYECTO 6</h1>
+        <p>Adopta un espacio, transforma tu plantel</p>
+    </header>
+
+    <main>
+        <section class="contenedor">
+
+            <div class="texto">
+                <h2>Mi Escuela, Mi Espacio</h2>
+
+                <p class="lema">
+                    Unidos por un plantel más limpio,
+                    verde y sustentable.
+                </p>
+
+                <p>
+                    Cuidemos nuestra escuela. Con pequeñas
+                    acciones podemos crear un espacio más
+                    limpio, agradable y saludable para todos.
+                </p>
+
+                <div class="botones">
+                    <button id="btnMensaje">
+                        ¡Participa!
+                    </button>
+
+                    <button id="btnColor">
+                        Cambiar fondo
+                    </button>
+
+                    <button id="btnModo">
+                        Modo ecológico
+                    </button>
+                </div>
+
+                <p id="mensaje" aria-live="polite"></p>
+            </div>
+
+            <div class="imagen">
+                <img
+                    src="images.jpg"
+                    alt="Reciclaje y cuidado del planeta"
+                >
+            </div>
+
+        </section>
+
+        <section class="acciones">
+            <h2>¿Cómo podemos ayudar?</h2>
+
+            <div class="tarjetas">
+                <article class="tarjeta">
+                    <span>♻️</span>
+                    <h3>Reciclar</h3>
+                    <p>Separa correctamente los residuos.</p>
+                    <button class="btnInfo"
+                        data-info="Deposita cada residuo en el contenedor correspondiente.">
+                        Más información
+                    </button>
+                </article>
+
+                <article class="tarjeta">
+                    <span>🌳</span>
+                    <h3>Cuidar las áreas verdes</h3>
+                    <p>Protege las plantas y los árboles.</p>
+                    <button class="btnInfo"
+                        data-info="No dañes las plantas y ayuda a mantener limpias las áreas verdes.">
+                        Más información
+                    </button>
+                </article>
+
+                <article class="tarjeta">
+                    <span>🧹</span>
+                    <h3>Mantener limpio</h3>
+                    <p>Deposita la basura en su lugar.</p>
+                    <button class="btnInfo"
+                        data-info="Recoge tus residuos y deja limpio el espacio que utilizas.">
+                        Más información
+                    </button>
+                </article>
+            </div>
+
+            <p id="info" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+<section class="acciones">
+    <h2>Información de nuestro proyecto</h2>
+
+    <p class="descripcion-tabla">
+        El proyecto "Adopta un Espacio" busca mantener
+        limpio y agradable nuestro plantel CECyTE Justo Sierra.
+    </p>
+
+    <div class="tabla-contenedor">
+        <table>
+            <thead>
+                <tr>
+                    <th>Actividad</th>
+                    <th>¿Qué hacemos?</th>
+                    <th>Objetivo</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Limpieza del plantel</td>
+                    <td>Recoger la basura de patios y áreas comunes.</td>
+                    <td>Mantener la escuela limpia y ordenada.</td>
+                </tr>
+
+                <tr>
+                    <td>Cuidado de espacios</td>
+                    <td>Conservar en buen estado salones y espacios compartidos.</td>
+                    <td>Tener un ambiente agradable para todos.</td>
+                </tr>
+
+                <tr>
+                    <td>Separación de residuos</td>
+                    <td>Depositar la basura en los lugares correspondientes.</td>
+                    <td>Reducir la contaminación.</td>
+                </tr>
+
+                <tr>
+                    <td>Trabajo en equipo</td>
+                    <td>Invitar a estudiantes a colaborar en la limpieza.</td>
+                    <td>Crear responsabilidad y participación.</td>
+                </tr>
+
+                <tr>
+                    <td>Cuidado del plantel</td>
+                    <td>Evitar tirar basura y mantener las áreas en buenas condiciones.</td>
+                    <td>Lograr una escuela más limpia y sustentable.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas de actividades para realizar</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+    <header class="encabezado">
+        <h1>Tablas de actividades para realizar</h1>
+        <p>Organiza y participa en las actividades del plantel</p>
+    </header>
+
+    <main class="contenedor">
+        <h2>Registro de Participación</h2>
+        <p class="descripcion">
+            Completa los siguientes datos para unirte a las actividades y proyectos disponibles.
+        </p>
+
+        <form action="#" method="post">
+            <!-- Datos generales (Campos 1 al 4) -->
+            <fieldset>
+                <legend>Datos generales</legend>
+
+                <label for="nombre">Nombre completo:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required> <!-- Campo 1 -->
+
+                <label for="matricula">Matrícula o número:</label>
+                <input type="text" id="matricula" name="matricula" placeholder="Escribe tu matrícula"> <!-- Campo 2 -->
+
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required> <!-- Campo 3 -->
+
+                <label for="grupo">Semestre y grupo:</label>
+                <input type="text" id="grupo" name="grupo" placeholder="Ejemplo: 5° A"> <!-- Campo 4 -->
+            </fieldset>
+
+            <!-- Selección de actividades (Campos 5 al 9) -->
+            <fieldset>
+                <legend>Actividades disponibles</legend>
+                <p>Selecciona las actividades en las que deseas colaborar:</p>
+
+                <label class="opcion">
+                    <input type="checkbox" name="actividades[]" value="Separación de residuos"> <!-- Campo 5 -->
+                    Separación de residuos
+                </label>
+                <label class="opcion">
+                    <input type="checkbox" name="actividades[]" value="Jornadas de limpieza"> <!-- Campo 6 -->
+                    Jornadas de limpieza
+                </label>
+                <label class="opcion">
+                    <input type="checkbox" name="actividades[]" value="Jardinería y áreas verdes"> <!-- Campo 7 -->
+                    Jardinería y cuidado de áreas verdes
+                </label>
+                <label class="opcion">
+                    <input type="checkbox" name="actividades[]" value="Ahorro de agua"> <!-- Campo 8 -->
+                    Campañas de ahorro de agua
+                </label>
+                <label class="opcion">
+                    <input type="checkbox" name="actividades[]" value="Diseño web y carteles"> <!-- Campo 9 -->
+                    Diseño de páginas web y carteles
+                </label>
+            </fieldset>
+
+            <!-- Disponibilidad y comentarios (Campos 10 y 11) -->
+            <fieldset>
+                <legend>Disponibilidad y notas</legend>
+
+                <label for="disponibilidad">¿Cuándo puedes participar?</label>
+                <select id="disponibilidad" name="disponibilidad" required> <!-- Campo 10 -->
+                    <option value="">Selecciona tu disponibilidad</option>
+                    <option value="entre semana">Entre semana</option>
+                    <option value="fines de semana">Fines de semana</option>
+                    <option value="ambos">Ambos</option>
+                </select>
+
+                <label for="comentarios">Comentarios o propuestas:</label>
+                <textarea id="comentarios" name="comentarios" rows="3" placeholder="Escribe tus ideas..."></textarea> <!-- Campo 11 -->
+            </fieldset>
+
+            <!-- Consentimiento (Campo 12) -->
+            <label class="opcion consentimiento">
+                <input type="checkbox" name="consentimiento" value="acepto" required> <!-- Campo 12 -->
+                Confirmo que los datos proporcionados son correctos para mi registro.
+            </label>
+
+            <!-- Botones -->
+            <button type="submit">Enviar registro</button>
+            <button type="reset" class="limpiar">Limpiar formulario</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Tablas de actividades | CECYTES</p>
+    </footer>
+
+</body>
+</html>
+<!-- Sección de Contador de Impacto / Metas del Plantel -->
+<section class="seccion-metas">
+    <h2 class="titulo-metas">Nuestro Impacto en el Plantel</h2>
+    <p class="subtitulo-metas">Lo que logramos juntos día a día por un CECYTES más verde y sustentable.</p>
+
+    <div class="contenedor-tarjetas-metas">
+
+        <!-- Tarjeta 1 -->
+        <div class="tarjeta-meta">
+            <div class="icono-meta">🌱</div>
+            <div class="numero-meta">+500</div>
+            <div class="etiqueta-meta">Alumnos comprometidos</div>
+            <p class="descripcion-meta">Participantes activos en campañas y jornadas ambientales.</p>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="tarjeta-meta">
+            <div class="icono-meta">♻️</div>
+            <div class="numero-meta">3.5 Ton</div>
+            <div class="etiqueta-meta">Residuos reciclados</div>
+            <p class="descripcion-meta">Material recuperado y procesado de forma responsable.</p>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="tarjeta-meta">
+            <div class="icono-meta">🌳</div>
+            <div class="numero-meta">12</div>
+            <div class="etiqueta-meta">Áreas verdes adoptadas</div>
+            <p class="descripcion-meta">Espacios restaurados y cuidados dentro del plantel.</p>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="tarjeta-meta">
+            <div class="icono-meta">💧</div>
+            <div class="numero-meta">100%</div>
+            <div class="etiqueta-meta">Compromiso ecológico</div>
+            <p class="descripcion-meta">Trabajando juntos por una comunidad limpia y sustentable.</p>
+        </div>
+
+    </div>
+</section>
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Galería - CECYTES sin basura</title>
+
+<link rel="stylesheet" href="estilos.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>CECYTES SIN BASURA</h1>
+
+<h2>Galería de imágenes</h2>
+
+<p>Unidos por un plantel más limpio, verde y sustentable</p>
+
+</header>
+
+<main>
+
+<section class="galeria">
+
+<div class="imagen">
+
+<img src="ima1.jpeg" alt="Actividad de reciclaje">
+
+<h3>Reciclaje</h3>
+
+<p>Promoviendo la cultura del reciclaje en nuestro plantel.</p>
+
+</div>
+
+<div class="imagen">
+
+<img src="ima2.jpeg" alt="Jornada de limpieza">
+
+<h3>Jornadas de limpieza</h3>
+
+<p>Alumnos participando en la limpieza de la escuela.</p>
+
+</div>
+<div class="imagen">
+
+<img src="ima6.jpeg" alt="Separación de residuos">
+
+<h3>Separación de residuos</h3>
+
+<p>Clasificación adecuada de los residuos.</p>
+
+
+</div>
+
+<div class="imagen">
+
+<img src="ima3.jpeg" alt="Alumnos participando">
+
+<h3>Participación estudiantil</h3>
+
+<p>Trabajando juntos por un ambiente saludable.</p>
+
+</div>
+
+<div class="imagen">
+
+<img src="ima4.jpeg" alt="Contenedores de basura">
+
+<h3>Contenedores</h3>
+
+<p>Utilización correcta de los contenedores.</p>
+
+</div>
+
+<div class="imagen">
+
+<img src="ima5.jpeg" alt="Áreas verdes">
+
+<h3>Áreas verdes</h3>
+
+<p>Cuidando y conservando nuestros espacios naturales.</p>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<p>CECYTES SIN BASURA | Cuidemos nuestro planeta</p>
+
+</footer>
+
+</body>
+
+</html>
+
+
+
+
+    
